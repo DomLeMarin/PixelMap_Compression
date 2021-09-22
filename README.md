@@ -75,6 +75,6 @@ Compression rate of 79.17%!**
 I think that Solidity should be able to digest all the weird UTF-8 characters, but I am not 100% sure. :)
 
 ## Credit
-I have inspired by the following two other solutions:
+I was inspired by the following two other solutions:
 1. https://github.com/robinbihun/pixelmap.imagelib#readme
 2. https://gist.github.com/pinealan/ad6de2d01fcc5d4ebc0396d3dd4da074
