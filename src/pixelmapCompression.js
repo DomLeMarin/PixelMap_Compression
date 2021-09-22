@@ -77,10 +77,22 @@ decompress = (str) => {
 }
 
 encode = (ss) => {
-  return compress(chunk_of_3(ss).map(x => pixelMapColorToHex(x)).join(''))
+  const converted = chunk_of_3(ss).map(x => pixelMapColorToHex(x)).join('')
+  const compressed = compress(converted)
+
+  if (compressed.length < 256) {
+    return compressed
+  } else {
+    return converted
+  }
 }
 
 decode = (cc) => {
-  return Array.from(decompress(cc)).map(x => hexToPixelMapColor(x)).join('')
+
+  if (cc.length < 256) {
+    cc = decompress(cc)
+  }
+
+  return Array.from(cc).map(x => hexToPixelMapColor(x)).join('')
 }
 
