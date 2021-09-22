@@ -44,7 +44,8 @@ The number of times a color is used in a row is also counted. This number is the
 ```
 ![Sample1](./docs/Sample1.png "Sample1")
 
-**Ken's example image is now only 160 characters! Compression rate of 79.17%**
+**Ken's example image is now only 160 characters! 
+Compression rate of 79.17%!**
 
 ```
 ********************** SAMPLE 2 **********************
